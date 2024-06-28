@@ -1,0 +1,250 @@
+html{
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.hero{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navigation{
+    width:100%;
+}
+nav {
+    width:auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.banner {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    margin: 0 0 0.8rem;
+}
+
+.banner p {
+    margin: 0 0 1rem;
+}
+
+.banner button {
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.banner button:hover {
+    background-color: #005f73;
+}
+
+
+.row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    margin:1rem;
+    margin-top: 0;
+    justify-content: center;
+    align-items:center;
+}
+.col{
+    flex-basis: 60rem;
+    display:flex;
+
+}
+.slider{
+    height: 60rem;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    height:60rem;
+    width: 150px;
+    
+}
+.product img{
+    height: auto;
+    width:100%;
+    max-width: 150px;
+    margin-bottom: 1rem ;
+    cursor: pointer;
+    opacity: 0.8;
+    transition :opacity 0.3% ease
+}
+
+.product img:hover{
+    opacity: 1;
+}
+
+.preview{
+    
+    height:60rem;
+}
+.preview img{
+    height:45rem;
+    width: auto;
+    max-width: 100%;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 5px;
+}
+h2{
+    font-size: 2.8rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+h3{
+    font-size: 1.5rem;
+    color: #555555c8;
+    margin-bottom: 20px;
+}
+.rating{
+    display: flex;
+    height: 15px;
+    margin: 2rem;
+}
+.rating .fa {
+    color: #008000;
+    font-size: 1.5rem;
+}
+.rating .far{
+    color: #008000;
+    font-size: 1.5rem;
+}
+.price {
+    font-weight: bold;
+    font-size: 1.6rem; 
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+}
+.strike{
+color: #555;
+    text-decoration: line-through;
+}
+.discount{
+    color: #008000;
+    font-size: 2rem; 
+}
+.brandname{
+    color: #fe980f;
+    font-size: 1.6rem; 
+    font-weight: bold;
+    padding-top: 10px;
+}
+input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button .fa{
+    margin-right: 10px;
+}
+.related{
+    width: 90%;
+    margin:auto;
+}
+.related .row{
+    width: 100%;
+    height: auto;
+}
+.columns{
+    flex-basis: 16rem;
+    height: 100%;
+}
+.items img{
+    width: 100%;
+    margin:1rem;
+}
+.details{
+    margin-top: 20px;
+}
+.details p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.details .rating{
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        transform: scale(0.9);
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col, .columns {
+        flex-basis: 100%;
+    }
+
+    .product img, .preview img {
+        max-width: 150px;
+    }
+
+    h2 {
+        font-size: 2rem; 
+    }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E commerce Product Page</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="navigation">
+            <nav>
+                <a href="/">Home</a>
+                <a href="/products">Products</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact</a>
+            </nav>
+            <div class="banner">
+                <h1>Special Offer!</h1>
+                <p>Don't miss out on our exclusive products at unbeatable prices.</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+
+                        <img src="images/oguz-yagiz-kara-1Um3fmYoIBs-unsplash.jpg" alt="" onclick="clickme(this)">
+                        <img src="images/oguz-yagiz-kara-auNmxTqyFPs-unsplash.jpg" alt="" onclick="clickme(this)">
+                        <img src="images/oguz-yagiz-kara-J_czZAGnjJM-unsplash.jpg" alt="" onclick="clickme(this)">
+                        <img src="images/oguz-yagiz-kara-x64XRbP45fg-unsplash.jpg" alt="" onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img src="images/oguz-yagiz-kara-1Um3fmYoIBs-unsplash.jpg" id="imagebox" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand">Brand: Nike</p>
+                    <h2>Nike Air Force 1</h2>
+                    <h3>Men's Shoes</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <p class="strike">$ 4999.00</p>
+                        <p class="realprice">$ 1899.00</p>
+                        <p class="discount">60% off</p>
+                    </div>
+
+                    <p class="brandname">Brand: Nike</p>
+                    <p>Size:
+                         <select name="size">
+
+                            <option value="select size">select size</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+
+                        </select></p>
+                    <p>Quantity: <input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>Add to cart</button>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>Buy Now
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="related">
+            <h2>Related Items</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/andres-jasso-PqbL_mxmaUE-unsplash.jpg" alt="">
+                        <div class="details">
+                            <p>Nike Air Force 1 F1</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+
+                            <p>USD $320.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/domino-studio-164_6wVEHfI-unsplash.jpg" alt="">
+                        <div class="details">
+                            <p>Nike Air Jorden</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <p>USD $150.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/irene-kredenets-dwKiHoqqxk8-unsplash.jpg" alt="">
+                        <div class="details">
+                            <p>Men Casual Shoes</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>USD $60.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/irene-kredenets-KStSiM1UvPw-unsplash.jpg" alt="">
+                        <div class="details">
+                            <p>Turquoise Blue Suede</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>USD $120.00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
